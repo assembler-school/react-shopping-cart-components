@@ -10,7 +10,7 @@ function ProductsListing({
   ...props
 }) {
   return (
-    <section className="row" {...props}>
+    <section className="row">
       {products.map((product) => (
         <ItemCard
           key={product.id}
@@ -25,6 +25,7 @@ function ProductsListing({
           isFavorite={product.isFavorite}
           handleSetFavorite={handleSetFavorite}
           handleAddToCart={handleAddToCart}
+          {...props}
         />
       ))}
     </section>
