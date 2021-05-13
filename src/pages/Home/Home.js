@@ -24,7 +24,7 @@ function Home() {
           </p>
           <p className="font-weight-bold">Buy now!</p>
         </header>
-        <ProductsListing products={...} handleDownVote={...} handleUpVote={...} handleSetFavorite={...} handleAddToCart={...}/>
+        <ProductsListing />
       </Main>
       <Footer />
     </>
