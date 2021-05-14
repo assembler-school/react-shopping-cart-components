@@ -61,12 +61,11 @@ function ItemCard({
 
       <IconButton aria-label="up vote product" handleClick={onUpVote}
 
-        <ThumbDown />
+       <ThumbDown />
 
       </IconButton>
 
-   
-
+    </div>
     
  
   
