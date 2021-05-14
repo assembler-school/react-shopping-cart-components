@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./AppHeader.scss";
 
 function AppHeader({ ...props }) {

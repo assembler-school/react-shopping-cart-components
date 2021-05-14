@@ -1,2 +1,37 @@
-.ItemCard {
+.ItemCard h2 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.ProductIcons {
+    display: flex;
+}
+
+.ProductFooter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.ProductIcon {
+    display: flex;
+    line-height: 1.42857143;
+    vertical-align: middle;
+
+}
+
+.ItemCard__icon-txt {
+    vertical-align: middle;
+}
+
+.FavoriteIconButton {
+    margin-right: 4%;
 }
