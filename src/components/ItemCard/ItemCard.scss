@@ -1,2 +1,43 @@
 .ItemCard {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+
+// BEM mixins
+
+    &__img{
+        display: block;
+        width: 100%;
+        height: 200px;
+        border-radius: 4px;
+    }
+
+    &__title{
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: .6em;
+    }
+
+    &__shortDescription{
+        font-size: .8em;
+        margin-top: .6em;
+    }
+
+    &__icons{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*
+    &__isFavorite{
+        right: 14px;
+        top: 5px;
+    } */
+
+    &__divider{
+        border: 1px solid rgb(181, 181, 181);
+        width: 100%;
+        margin: .6em;
+    }
+
 }
