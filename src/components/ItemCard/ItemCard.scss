@@ -1,2 +1,36 @@
+@mixin flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
 .ItemCard {
+  width: 100%;
+  margin-bottom: 20px;
+  img {
+    width: 100%;
+    height: 235px;
+    border-radius: 5px;
+  }
+  .FavoriteIconButton {
+    right: 25px;
+  }
+  .descContainer {
+    height: 50px;
+  }
+  .wrapper {
+    @include flexRow;
+    justify-content: space-between;
+    .iconContainer {
+      @include flexRow;
+      align-items: center;
+      .iconWrapper {
+        @include flexRow;
+        margin-right: 10px;
+        p {
+          align-self: center;
+          margin: 0 0 0 10px;
+        }
+      }
+    }
+  }
 }
