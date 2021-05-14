@@ -6,6 +6,7 @@ import AppHeader from "../../components/AppHeader";
 import Main from "../../components/Main";
 import Footer from "../../components/Footer";
 import ProductsListing from "../../components/ProductsListing";
+import ItemCard from "../../components/ItemCard";
 
 function Home() {
   function handleDownVote() {}
@@ -31,6 +32,7 @@ function Home() {
           handleSetFavorite={handleSetFavorite}
           handleAddToCart={handleAddToCart}
         />
+        <ItemCard />
       </Main>
       <Footer />
     </>

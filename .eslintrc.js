@@ -64,5 +64,7 @@ module.exports = {
         endOfLine: "auto",
       },
     ],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
   },
 };

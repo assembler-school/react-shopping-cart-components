@@ -15,7 +15,7 @@ function ItemCard({
   id,
   img,
   title,
-  shortDesceription,
+  shortDescription,
   isFavorite,
   upVotes,
   downVotes,
@@ -37,7 +37,29 @@ function ItemCard({
     handleAddToCart(id);
   }
 
-  return <article className="ItemCard col col-12 col-md-6 col-lg-4" />;
+  return (
+    <div>
+      <article className="ItemCard col col-12 col-md-6 col-lg-4" />;
+      <img src={img} className="ItemCard__image" alt={title} />;
+      <FavoriteIconButton
+        handleSetFavorite={onSetFavorite}
+        isFavorite={isFavorite}
+      />
+      <h2 className="ItemCard__title">{title}</h2>
+      <Divider />
+      <p className="ItemCard__description">{shortDescription}</p>
+      <Divider />
+      <IconButton aria-label="up vote product" handleClick={onUpVote}>
+        <ThumbDown />
+        <p className="ItemCard__icon-txt">{downVotes.currentValue}</p>
+      </IconButton>
+      <IconButton aria-label="down vote product" handleClick={onDownVote}>
+        <ThumbUp />
+        <p>{upVotes.currentValue}</p>
+      </IconButton>
+      <Button onClick={onAddToCart}>Add to cart</Button>
+    </div>
+  );
 }
 
 export default ItemCard;
