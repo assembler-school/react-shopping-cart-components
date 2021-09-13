@@ -3,7 +3,7 @@ import React from "react";
 function Button({ submitButton, children, disabled = false, ...props }) {
   return (
     <button
-      props={props}
+      {...props}
       className="btn btn-primary"
       type={submitButton ? "submit" : "button"}
       disabled={disabled}
