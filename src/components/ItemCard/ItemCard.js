@@ -38,7 +38,8 @@ import "./ItemCard.scss";
   }
 
   return (
-  <article className="ItemCard col col-12 col-md-6 col-lg-4" />;
+  <article className="ItemCard col col-12 col-md-6 col-lg-4" />
+  
   );
 }
 
