@@ -11,7 +11,7 @@ function ProductsListing({
   ...props
 }) {
   return (
-    <section className="row">
+    <section className="row" {...props}>
       {products.map((product) => (
         <ItemCard
           key={product.id}
