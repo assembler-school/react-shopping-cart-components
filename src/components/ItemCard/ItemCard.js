@@ -8,7 +8,7 @@ import { ThumbDown, ThumbUp } from "../SVGIcons";
 import "./ItemCard.scss";
 
 function Divider() {
-  return <hr className="ItemCard__divider" />;
+  return <hr className="item-card__divider" />;
 }
 
 function ItemCard({
@@ -38,27 +38,29 @@ function ItemCard({
   }
 
   return (
-    <article className="ItemCard col col-12 col-md-6 col-lg-4">
-      <header>
-        <img src={img} />
+    <article className="item-card col col-12 col-md-6 col-lg-4">
+      <header className="item-card__header">
+        <img className="item-card__img" src={img} alt={title} />
         <FavoriteIconButton
           handleSetFavorite={onSetFavorite}
           isFavorite={isFavorite}
         />
       </header>
-      <h2>{title}</h2>
+      <h2 className="item-card__title">{title}</h2>
       <Divider />
-      <p>{shortDescription}</p>
+      <p className="item-card__description">{shortDescription}</p>
       <Divider />
-      <footer>
-        <IconButton aria-label="up vote product" handleClick={onUpVote}>
-          <ThumbUp />
-          <p>{upVotes.currentValue}</p>
-        </IconButton>
-        <IconButton aria-label="down vote product" handleClick={onDownVote}>
-          <ThumbDown />
-          <p>{downVotes.currentValue}</p>
-        </IconButton>
+      <footer className="item-card__footer">
+        <div className="item-card__voting-controls">
+          <IconButton aria-label="up vote product" handleClick={onUpVote}>
+            <ThumbUp />
+          </IconButton>
+          <p className="item-card__vote-count">{upVotes.currentValue}</p>
+          <IconButton aria-label="down vote product" handleClick={onDownVote}>
+            <ThumbDown />
+          </IconButton>
+          <p className="item-card__vote-count">{downVotes.currentValue}</p>
+        </div>
         <Button onClick={onAddToCart}>Add to cart</Button>
       </footer>
     </article>

@@ -1,2 +1,45 @@
-.ItemCard {
+.item-card {
+	margin-bottom: 1rem;
+
+	&__header {
+		position: relative;
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	&__title {
+		margin: 1rem 0 0.75rem;
+    font-size: large;
+    font-weight: 700;
+	}
+
+	&__description {
+		margin: 1rem 0 0.75rem;
+		font-size: 1rem;
+	}
+
+	&__divider {
+		margin: 0;
+		border-top-width: 0.15rem;
+	}
+
+	&__voting-controls {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	&__footer {
+		padding: 1rem 0;
+		
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__vote-count {
+		padding: 0;
+		margin: 0;
+	}
 }
