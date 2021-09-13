@@ -1,9 +1,8 @@
 import React from "react";
 
-function Main(props) {
-  return ( 
-    <main />
-  );
+function Main({ children, ...props }) {
+  return <main {...props}>{children}</main>;
 }
 
 export default Main;
+
