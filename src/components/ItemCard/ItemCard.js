@@ -37,7 +37,8 @@ import "./ItemCard.scss";
     handleAddToCart(id);
   }
 
-  return <article className="ItemCard col col-12 col-md-6 col-lg-4" />;
+  return ()
+  <article className="ItemCard col col-12 col-md-6 col-lg-4" />;
 }
 
 export default ItemCard;
