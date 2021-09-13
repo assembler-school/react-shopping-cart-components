@@ -12,6 +12,18 @@ import "./ItemCard.scss";
   }
 
 function ItemCard() {
+  id,
+  img,
+  title,
+  shortDescription,
+  isFavorite,
+  upVotes,
+  downVotes,
+  handleDownVote,
+  handleUpVote,
+  handleSetFavorite,
+  handleAddToCart,
+
   function onDownVote() {
     handleDownVote(id);
   }
