@@ -1,5 +1,7 @@
 function App() {
-  return null;
+  return (
+    <Home />
+  );
 }
 
 export default App;
