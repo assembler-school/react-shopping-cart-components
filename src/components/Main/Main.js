@@ -5,4 +5,3 @@ function Main({ children, ...props }) {
 }
 
 export default Main;
-
