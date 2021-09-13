@@ -23,7 +23,7 @@ function ItemCard() {
   handleUpVote,
   handleSetFavorite,
   handleAddToCart,
-
+}
   function onDownVote() {
     handleDownVote(id);
   }
