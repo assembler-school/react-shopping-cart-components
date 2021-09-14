@@ -39,7 +39,11 @@ import "./ItemCard.scss";
 
   return (
   <article className="ItemCard col col-12 col-md-6 col-lg-4">
-  <img className="">{img}</img>
+  <img src={img} className="ItemCard__img" alt={title} />
+  <FavoriteIconButton
+  
+  />
+
   </article>
   );
 }
