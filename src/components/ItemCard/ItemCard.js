@@ -38,13 +38,38 @@ import "./ItemCard.scss";
   }
 
   return (
-  <article className="ItemCard col col-12 col-md-6 col-lg-4">
-  <img src={img} className="ItemCard__img" alt={title} />
-  <FavoriteIconButton
-  
-  />
-
-  </article>
+    <article className="ItemCard col col-12 col-md-6 col-lg-4">
+        <div className="ItemCard__image-wrapper">
+          <img src={img} className="ItemCard__image" alt={title} />
+          <FavoriteIconButton
+            handleSetFavorite={onSetFavorite}
+            isFavorite={isFavorite}
+          />
+        </div>
+        <h2 className="ItemCard__title">{title}</h2>
+      <Divider />
+      <p className="ItemCard__description">{shortDescription}</p>
+      <Divider />
+      <footer className="ItemCard__meta">
+        <div className="ItemCard__icons">
+          <div className="ItemCard__icon-row">
+            <IconButton aria-label="up vote product" handleClick={onUpVote}>
+              <ThumbDown />
+            </IconButton>
+            <p className="ItemCard__icon-txt">{downVotes.currentValue}</p>
+          </div>
+          <div className="ItemCard__icon-row">
+            <IconButton aria-label="down vote product" handleClick={onDownVote}>
+              <ThumbUp />
+            </IconButton>
+            <p className="ItemCard__icon-txt">{upVotes.currentValue}</p>
+          </div>
+        </div>
+        <div className="ItemCard__icon-row">
+          <Button onClick={onAddToCart}>Add to cart</Button>
+        </div>
+      </footer>
+    </article>
   );
 }
 
