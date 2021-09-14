@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/Footer/Footer.scss"],"names":[],"mappings":"AAAA,QACE,UAAA,CACA,iBAAA,CACA,iBAAA","file":"main.af6e1f35.chunk.css","sourcesContent":[".Footer {\r\n  width: 100%;\r\n  text-align: center;\r\n  padding: 4rem 1rem;\r\n}\r\n"]}
