@@ -1,2 +1,21 @@
 .ItemCard {
+    padding-bottom: 1rem;
+
+    & > img{
+        width: 105%;
+        padding-bottom: 1rem;
+    }
+
+    &__footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__buttons{
+        display: flex;
+        & > p{
+            margin: 0.5rem;
+        }
+    }
 }
+
