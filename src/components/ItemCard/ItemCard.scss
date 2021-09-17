@@ -1,2 +1,8 @@
-.ItemCard {
+.item-card {
+  padding: 1rem;
+
+  &__image {
+    width: 100%;
+    border-radius: 5px;
+  }
 }
